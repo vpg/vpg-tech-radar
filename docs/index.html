@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Voyage Privé Tech Radar</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- D3.js & Local Javascript -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="radar.js"></script>
+    
+    <!-- Bootstrap v5 & Local CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="radar.css">
+  </head>
+
+  <body class="py-0">
+    <!-- Tech Radar (Desktop only / Not responsive)-->
+    <svg id="radar"></svg>
+    <script>
+      radar_visualization({
+        svg_id: "radar",
+        width: 1450,
+        height: 1000,
+        colors: {
+          background: "#fff",
+          grid: "#bbb",
+          inactive: "#ddd"
+        },
+        title: "Voyage Privé Tech Radar",
+        quadrants: [
+          { name: "Languages" },
+          { name: "Infrastructure" },
+          { name: "Data Storage" },
+          { name: "Data Management" },
+        ],
+        rings: [
+          { name: "ADOPT", color: "#007206" },
+          { name: "TRIAL", color: "#e5ad00" },
+          { name: "HOLD",  color: "#bd1243" }
+        ],
+        print_layout: true,
+
+        // Begin Entries
+        entries: [
+            {
+              "quadrant": 2,
+              "ring": 0,
+              "label": "MySQL",
+              //"link": "",
+              "active": true,
+              "moved": 0
+            },
+            {
+              "quadrant": 1,
+              "ring": 0,
+              "label": "GCP Dataproc",
+              "active": true,
+              "moved": 0
+            },
+            {
+              "quadrant": 2,
+              "ring": 1,
+              "label": "Google Cloud Storage",
+              "active": true,
+              "moved": 0
+            },
+            {
+              "quadrant": 3,
+              "ring": 2,
+              "label": "Dataiku",
+              "active": true,
+              "moved": 0
+            }
+          ]
+        // End Entries
+      });
+    </script>
+
+    <!-- Tech Radar Explanations -->
+    <div class="container row align-items-top mx-auto mb-5">
+      <div class="col-12 col-lg-6 px-3">
+        <h3 class="mt-5">What is the Tech Radar?</h3>
+        <p class="text-justify">
+          The Voyage Privé Tech Radar is a list of technologies, complemented by an assessment result, 
+          called <em>ring assignment</em>. We use three rings with the following semantics:
+        </p>
+
+        <ul class="text-justify">
+          <li>
+            <strong>ADOPT</strong> &mdash; Technologies we have high confidence in to serve our purpose, also in 
+            large scale. Technologies with a usage culture in our Voyage Privé production environment, low risk and 
+            recommended to be widely used.
+          </li>
+          <li>
+            <strong>TRIAL</strong> &mdash; Technologies that we have seen work with success in project work to 
+            solve a real problem; first serious usage experience that confirm benefits and can uncover limitations. 
+            TRIAL technologies are slightly more risky; some engineers in our organization walked this path and 
+            will share knowledge and experiences.
+          </li>
+          <li>
+            <strong>HOLD</strong> &mdash; Technologies not recommended to be used for new projects. Technologies that 
+            we think are not (yet) worth to (further) invest in. HOLD technologies should not be used for new projects, 
+            but usually can be continued for existing projects.
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-6 px-3">
+        <h3 class="mt-5">What is the purpose?</h3>
+        <p class="text-justify">
+          The Tech Radar is a tool to inspire and support Engineering teams at Voyage Privé to pick the best technologies 
+          for new projects; it provides a platform to share knowledge and experience in technologies, to reflect on 
+          technology decisions and continuously evolve our technology landscape. Based on the 
+          <a href="https://www.thoughtworks.com/radar">pioneering work of ThoughtWorks</a>, our Tech Radar sets 
+          out the changes in technologies that are interesting in software development &mdash; changes that we 
+          think our engineering teams should pay attention to and use in their projects.
+        </p>
+        
+        <h3>How do we maintain it?</h3>
+        <p class="text-justify">
+          The Tech Radar is maintained by our <em>Principal Engineers</em> &mdash; who faciliate and drive the 
+          technology selection discussions at Zalando across the Engineering Community. Assignment of technologies 
+          to rings is the outcome of ring change proposals, which are discussed and voted on. The Tech Radar is 
+          open for contribution for all Engineering teams at Zalando and depends on their active participation 
+          to share lessons learned, pitfalls, and contribute to good practices on using the technologies.<br/>
+        </p>
+        <p class="text-justify">
+          Check out our <a href="https://engineering.zalando.com/tags/tech-radar.html">Engineering Blog</a> for more 
+          information on how we approach Technology Selection and use the Tech Radar at Zalando.
+        </p>
+      </div>
+    </div>
+
+    <!-- Page Footer / Copyright-->
+    <p class="footer my-0 text-center">
+      <small>
+        © 2021 <a class="text-dark text-decoration-none" href="https://www.voyage-prive.com/?utm_source=tech-radar">
+        Voyage Privé</a>. Based on the <a class="text-dark" href="https://github.com/zalando/tech-radar" 
+        target="_blank">Zalando Tech Radar</a>.
+      </small>
+    </p>
+  </body>
+</html>
