@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 
-// Copyright (c) 2021 Voyage Privé
+// Copyright (c) 2017 Zalando SE
 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -245,7 +245,7 @@ function radar_visualization(config) {
         .attr("y", -rings[i].radius + 62)
         .attr("text-anchor", "middle")
         .style("fill", "#e5e5e5")
-        .style("font-family", "Arial, Helvetica")
+        .style("font-family", "Source Sans Pro")
         .style("font-size", "42px")
         .style("font-weight", "bold")
         .style("pointer-events", "none")
@@ -404,7 +404,7 @@ function radar_visualization(config) {
         .style("fill", d.color);
     } else {
       blip.append("circle")
-        .attr("r", 9)
+        .attr("r", 15)
         .attr("fill", d.color);
     }
 
@@ -416,7 +416,7 @@ function radar_visualization(config) {
         .attr("y", 3)
         .attr("text-anchor", "middle")
         .style("fill", "#fff")
-        .style("font-family", "Arial, Helvetica")
+        .style("font-family", "Source Sans Pro")
         .style("font-size", function(d) { return blip_text.length > 2 ? "8px" : "9px"; })
         .style("pointer-events", "none")
         .style("user-select", "none");
