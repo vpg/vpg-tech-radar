@@ -434,6 +434,6 @@ function radar_visualization(config) {
   d3.forceSimulation()
     .nodes(config.entries)
     .velocityDecay(0.19) // magic number (found by experimentation)
-    .force("collision", d3.forceCollide().radius(12).strength(0.85))
+    .force("collision", d3.forceCollide().radius(17).strength(0.85))
     .on("tick", ticked);
 }
