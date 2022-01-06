@@ -48,8 +48,8 @@ function radar_visualization(config) {
   ];
 
   const rings = [
-    { radius: 140 },
-    { radius: 280 },
+    { radius: 180 },
+    { radius: 300 },
     { radius: 420 }
   ];
 
@@ -404,7 +404,7 @@ function radar_visualization(config) {
         .style("fill", d.color);
     } else {
       blip.append("circle")
-        .attr("r", 15)
+        .attr("r", 13)
         .attr("fill", d.color);
     }
 
