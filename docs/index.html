@@ -3,11 +3,11 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>Voyage Privé Tech Radar</title>
     <link rel="shortcut icon" href="favicon.ico">
-    
+
     <!-- D3.js & Local Javascript -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="radar.js"></script>
-    
+
     <!-- Bootstrap v5 & Local CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="radar.css">
@@ -26,7 +26,7 @@
           grid: "#bbb",
           inactive: "#ddd"
         },
-        title: "Voyage Privé Tech Radar - 2022/01",
+        title: "Voyage Privé Tech Radar - 2024/07",
         quadrants: [
           { name: "Languages" },
           { name: "Infrastructure" },
@@ -45,11 +45,11 @@
             /* Languages */
             {
               "quadrant": 0,
-              "ring": 0,
+              "ring": 2,
               "label": "Scala",
               "link": "https://scala-lang.org/",
               "active": true,
-              "moved": 0
+              "moved": -1
             },
             {
               "quadrant": 0,
@@ -85,18 +85,11 @@
             },
             {
               "quadrant": 0,
-              "ring": 2,
+              "ring": 0,
               "label": "Java",
               "link": "https://www.java.com/",
               "active": true,
-              "moved": 0
-            },
-            {
-              "quadrant": 0,
-              "ring": 2,
-              "label": "Objective-C",
-              "active": true,
-              "moved": 0
+              "moved": 1
             },
             {
               "quadrant": 0,
@@ -115,11 +108,11 @@
             },
             {
               "quadrant": 0,
-              "ring": 0,
+              "ring": 2,
               "label": "PHP",
               "link": "https://www.php.net/",
               "active": true,
-              "moved": 0
+              "moved": -1
             },
             {
               "quadrant": 0,
@@ -131,11 +124,19 @@
             },
             {
               "quadrant": 0,
-              "ring": 1,
+              "ring": 2,
               "label": "Ruby",
               "link": "https://www.ruby-lang.org/",
               "active": true,
-              "moved": 0
+              "moved": -1
+            },
+            {
+              "quadrant": 0,
+              "ring": 1,
+              "label": "Go",
+              "link": "https://go.dev/",
+              "active": true,
+              "moved": 1
             },
 
             /* Infrastructure */
@@ -169,7 +170,7 @@
               "label": "Kandji",
               "link": "https://www.kandji.io/",
               "active": true,
-              "moved": 1
+              "moved": 0
             },
             {
               "quadrant": 1,
@@ -189,11 +190,11 @@
             },
             {
               "quadrant": 1,
-              "ring": 1,
+              "ring": 0,
               "label": "Kubernetes",
               "link": "https://kubernetes.io/",
               "active": true,
-              "moved": 0
+              "moved": 1
             },
             {
               "quadrant": 1,
@@ -213,11 +214,11 @@
             },
             {
               "quadrant": 1,
-              "ring": 0,
+              "ring": 2,
               "label": "GitHub",
               "link": "https://github.com/",
               "active": true,
-              "moved": 0
+              "moved": -1
             },
             {
               "quadrant": 1,
@@ -225,19 +226,19 @@
               "label": "GitLab",
               "link": "https://about.gitlab.com/",
               "active": true,
-              "moved": 1
-            },
-            {
-              "quadrant": 1,
-              "ring": 1,
-              "label": "Jenkins",
-              "link": "https://www.jenkins.io/",
-              "active": true,
               "moved": 0
             },
             {
               "quadrant": 1,
-              "ring": 1,
+              "ring": 0,
+              "label": "Jenkins",
+              "link": "https://www.jenkins.io/",
+              "active": true,
+              "moved": 1
+            },
+            {
+              "quadrant": 1,
+              "ring": 0,
               "label": "Terraform",
               "link": "https://www.terraform.io/",
               "active": true,
@@ -245,13 +246,52 @@
             },
             {
               "quadrant": 1,
-              "ring": 1,
+              "ring": 0,
               "label": "Google Cloud Composer",
               "link": "https://cloud.google.com/composer/",
               "active": true,
               "moved": 1
             },
-            
+            {
+              "quadrant": 1,
+              "ring": 1,
+              "label": "Coder",
+              "link": "https://coder.com/",
+              "active": true,
+              "moved": 1
+            },
+            {
+              "quadrant": 1,
+              "ring": 0,
+              "label": "Argo CD",
+              "link": "https://argo-cd.readthedocs.io/",
+              "active": true,
+              "moved": 1
+            },
+            {
+              "quadrant": 1,
+              "ring": 1,
+              "label": "Argo Workflow",
+              "link": "https://argoproj.github.io/workflows/",
+              "active": true,
+              "moved": 1
+            },
+            {
+              "quadrant": 1,
+              "ring": 0,
+              "label": "Helm",
+              "link": "https://helm.sh/",
+              "active": true,
+              "moved": 1
+            },
+            {
+              "quadrant": 1,
+              "ring": 2,
+              "label": "Minikube",
+              "link": "https://minikube.sigs.k8s.io/",
+              "active": true,
+              "moved": -1
+            },
             /* Frameworks */
             {
               "quadrant": 2,
@@ -287,19 +327,19 @@
             },
             {
               "quadrant": 2,
-              "ring": 0,
+              "ring": 2,
               "label": "Akka",
               "link": "https://akka.io/",
               "active": true,
-              "moved": 0
+              "moved": -1
             },
             {
               "quadrant": 2,
-              "ring": 1,
+              "ring": 2,
               "label": "Material UI",
               "link": "https://material-ui.com/",
               "active": true,
-              "moved": 0
+              "moved": -1
             },
             {
               "quadrant": 2,
@@ -319,19 +359,19 @@
             },
             {
               "quadrant": 2,
-              "ring": 1,
+              "ring": 0,
               "label": "Yarn pkg",
               "link": "https://yarnpkg.com/",
               "active": true,
-              "moved": 0
+              "moved": 1
             },
             {
               "quadrant": 2,
-              "ring": 0,
+              "ring": 2,
               "label": "Crashlytics",
               "link": "https://firebase.google.com/products/crashlytics/",
               "active": true,
-              "moved": 0
+              "moved": -1
             },
             {
               "quadrant": 2,
@@ -351,37 +391,53 @@
             },
             {
               "quadrant": 2,
-              "ring": 0,
+              "ring": 2,
               "label": "Redux Toolkit",
               "link": "https://redux-toolkit.js.org/",
               "active": true,
-              "moved": 0
+              "moved": -1
             },
             {
               "quadrant": 2,
               "ring": 2,
-              "label": "Gulp",
-              "link": "https://gulpjs.org/",
+              "label": "sbt",
+              "link": "https://www.scala-sbt.org/",
               "active": true,
-              "moved": 0
+              "moved": -1
             },
             {
               "quadrant": 2,
               "ring": 0,
-              "label": "sbt",
-              "link": "https://www.scala-sbt.org/",
+              "label": "Spring",
+              "link": "https://spring.io/projects/spring-framework",
               "active": true,
-              "moved": 0
+              "moved": 1
+            },
+            {
+              "quadrant": 2,
+              "ring": 1,
+              "label": "Tailwind CSS",
+              "link": "https://tailwindcss.com/",
+              "active": true,
+              "moved": 1
+            },
+            {
+              "quadrant": 2,
+              "ring": 1,
+              "label": "Vite JS",
+              "link": "https://vitejs.dev/",
+              "active": true,
+              "moved": 1
             },
 
             /* Data */
             {
               "quadrant": 3,
-              "ring": 0,
+              "ring": 2,
               "label": "MySQL",
               "link": "https://www.mysql.com/",
               "active": true,
-              "moved": 0
+              "moved": -1
             },
             {
               "quadrant": 3,
@@ -409,11 +465,11 @@
             },
             {
               "quadrant": 3,
-              "ring": 1,
+              "ring": 2,
               "label": "Cassandra",
               "link": "https://cassandra.apache.org/",
               "active": true,
-              "moved": 0
+              "moved": -1
             },
             {
               "quadrant": 3,
@@ -433,27 +489,19 @@
             },
             {
               "quadrant": 3,
-              "ring": 1,
-              "label": "HSQLDB",
-              "link": "http://hsqldb.org/",
+              "ring": 0,
+              "label": "MongoDB",
+              "link": "https://www.mongodb.com/",
               "active": true,
-              "moved": 0
+              "moved": 1
             },
             {
               "quadrant": 3,
               "ring": 2,
-              "label": "MongoDB",
-              "link": "https://www.mongodb.com/",
-              "active": true,
-              "moved": 0
-            },
-            {
-              "quadrant": 3,
-              "ring": 0,
               "label": "Memcached",
               "link": "https://www.memcached.org/",
               "active": true,
-              "moved": 0
+              "moved": -1
             },
             {
               "quadrant": 3,
@@ -473,15 +521,15 @@
             },
             {
               "quadrant": 3,
-              "ring": 1,
+              "ring": 0,
               "label": "Kafka",
               "link": "https://kafka.apache.org/",
               "active": true,
-              "moved": 0
+              "moved": 1
             },
             {
               "quadrant": 3,
-              "ring": 1,
+              "ring": 0,
               "label": "Airflow",
               "link": "https://airflow.apache.org/",
               "active": true,
@@ -498,18 +546,10 @@
             {
               "quadrant": 3,
               "ring": 2,
-              "label": "Hadoop",
-              "link": "https://hadoop.apache.org/",
-              "active": true,
-              "moved": -1
-            },
-            {
-              "quadrant": 3,
-              "ring": 2,
               "label": "Dataiku DSS",
               "link": "https://www.dataiku.com/",
               "active": true,
-              "moved": -1
+              "moved": 0
             },
             {
               "quadrant": 3,
@@ -535,6 +575,30 @@
               "active": true,
               "moved": 0
             },
+            {
+              "quadrant": 3,
+              "ring": 0,
+              "label": "dbt",
+              "link": "https://www.getdbt.com/",
+              "active": true,
+              "moved": 1
+            },
+            {
+              "quadrant": 3,
+              "ring": 0,
+              "label": "Google Datastream",
+              "link": "https://cloud.google.com/datastream/",
+              "active": true,
+              "moved": 1
+            },
+            {
+              "quadrant": 3,
+              "ring": 1,
+              "label": "Vertex AI",
+              "link": "https://cloud.google.com/vertex-ai/",
+              "active": true,
+              "moved": 1
+            },
           ]
         // End Entries
       });
@@ -546,19 +610,19 @@
         <h3 class="mt-5 text-uppercase">Legend</h3>
         <ul class="text-justify">
           <li>
-            <strong>ADOPT</strong> &mdash; Technologies we have high confidence in to serve our purpose, also in 
-            large scale. Technologies with a usage culture in our Voyage Privé production environment, low risk and 
+            <strong>ADOPT</strong> &mdash; Technologies we have high confidence in to serve our purpose, also in
+            large scale. Technologies with a usage culture in our Voyage Privé production environment, low risk and
             recommended to be widely used.
           </li>
           <li>
-            <strong>TRIAL</strong> &mdash; Technologies that we have seen work with success in project work to 
-            solve a real problem; first serious usage experience that confirm benefits and can uncover limitations. 
-            TRIAL technologies are slightly more risky; some engineers in our organization walked this path and 
+            <strong>TRIAL</strong> &mdash; Technologies that we have seen work with success in project work to
+            solve a real problem; first serious usage experience that confirm benefits and can uncover limitations.
+            TRIAL technologies are slightly more risky; some engineers in our organization walked this path and
             will share knowledge and experiences.
           </li>
           <li>
-            <strong>HOLD</strong> &mdash; Technologies not recommended to be used for new projects. Technologies that 
-            we think are not (yet) worth to (further) invest in. HOLD technologies should not be used for new projects, 
+            <strong>HOLD</strong> &mdash; Technologies not recommended to be used for new projects. Technologies that
+            we think are not (yet) worth to (further) invest in. HOLD technologies should not be used for new projects,
             but usually can be continued for existing projects.
           </li>
         </ul>
@@ -569,7 +633,7 @@
     <p class="footer my-0 text-center">
       <small>
         © 2021 <a class="text-dark text-decoration-none" href="https://www.voyage-prive.com/?utm_source=tech-radar">
-        Voyage Privé</a>. Based on the <a class="text-dark" href="https://github.com/zalando/tech-radar" 
+        Voyage Privé</a>. Based on the <a class="text-dark" href="https://github.com/zalando/tech-radar"
         target="_blank">Zalando Tech Radar</a>.
       </small>
     </p>

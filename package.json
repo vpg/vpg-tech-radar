@@ -2,8 +2,8 @@
   "name": "vpg-tech-radar",
   "version": "2021.0.0",
   "description": "Visualizing Voyage Privé technology choices",
-  "homepage": "https://github.com/dgaillard/vpg-tech-radar#readme",
-  "repository": "https://github.com/dgaillard/vpg-tech-radar.git",
+  "homepage": "https://github.com/vpg/vpg-tech-radar#readme",
+  "repository": "https://github.com/vpg/vpg-tech-radar.git",
   "license": "MIT",
   "directories": {
     "doc": "docs"
