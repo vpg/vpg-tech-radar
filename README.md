@@ -1,7 +1,7 @@
 # Motivation
 
 At [Voyage Privé](https://www.voyage-prive.com), we created a Tech
-Radar to help our engineering teams align on technology choices. 
+Radar to help our engineering teams align on technology choices.
 It is based on the [Zalando Tech Radar](http://zalando.github.io/tech-radar/).
 
 This repository contains the code to generate the visualization:
@@ -70,11 +70,11 @@ Entries are positioned automatically so that they don't overlap.
 1. install dependencies with yarn (or npm):
 
 ```
-yarn 
+yarn
 ```
 or
 ```
-npm install 
+npm install
 ```
 2. start local dev server:
 
@@ -86,7 +86,7 @@ or
 npm run start
 ```
 3. your default browser should automatically open and show the url
- 
+
 ```
 http://localhost:3000/
 ```
@@ -96,7 +96,7 @@ http://localhost:3000/
 ```
 The MIT License (MIT)
 
-Copyright (c) 2017 Zalando SE
+Copyright (c) 2021 Voyage Prive Group
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
